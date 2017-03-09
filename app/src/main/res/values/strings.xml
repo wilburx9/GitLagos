@@ -1,0 +1,23 @@
+
+<resources>
+    <string name="app_name">GitLagos</string>
+
+
+    //Volley Errors
+    <string name="connect_time_o">Connection timed out</string>
+    <string name="no_connect_err">No internet connection found. Check your connection and try again</string>
+    <string name="auth_error">Authentication failure</string>
+    <string name="server_error">Server failure</string>
+    <string name="network_error">Network failure. Check your connection and try again</string>
+    <string name="parse_error">Parsing failure</string>
+
+
+    <string name="alert_retry">Retry</string>
+    <string name="license">Licenses</string>
+    <string name="details_stub">Click a user on left to show the details here</string>
+    <string name="sth_wrong">Something went wrong</string>
+    <string name="load_more">Load more users</string>
+    <string name="share_text">Check out this awesome developer @%1$s, %2$s.</string>
+    <string name="dismiss">Dismiss</string>
+
+</resources>

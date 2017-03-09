@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--<resources>-->
+    <!--<item name="app_bar_user" type="layout">@layout/main_activity_two_panes</item>-->
+    <!--<bool name="has_two_panes">true</bool>-->
+<!--</resources>-->
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<resources>
+    <item name="app_bar_user" type="layout">@layout/main_activity_one_pane</item>
+    <bool name="has_two_panes">false</bool>
+</resources>
