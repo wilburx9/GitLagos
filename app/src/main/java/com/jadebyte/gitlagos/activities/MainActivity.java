@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity implements UserClickedListen
         hasTwoPanes = getResources().getBoolean(R.bool.has_two_panes);
 
         if (savedInstanceState == null) {
-            launchUserListFragment(false, Constants.URLS.DEFAULT_URL);
+            launchUserListFragment(false);
             if (hasTwoPanes) {
                 launchBlankFragment();
             }
@@ -83,18 +83,13 @@ public class MainActivity extends AppCompatActivity implements UserClickedListen
         }
     }
 
-    private void launchUserListFragment(boolean shouldBackStack, String userUrl) {
-        Fragment fragment = new UserListFragment();
-        Bundle bundle = new Bundle();
-        bundle.putString("userUrl", userUrl);
-        fragment.setArguments(bundle);
-
+    private void launchUserListFragment(boolean shouldBackStack) {
         FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
         ft.setCustomAnimations(R.anim.fade_in, R.anim.fade_out, R.anim.fade_in, R.anim.fade_out);
         if (shouldBackStack) {
             ft.addToBackStack(null);
         }
-        ft.replace(R.id.user_content_frame, fragment, "UserListFragment");
+        ft.replace(R.id.user_content_frame, new UserListFragment(), "UserListFragment");
         ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
         ft.commitAllowingStateLoss();
     }

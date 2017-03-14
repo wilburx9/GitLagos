@@ -31,6 +31,7 @@ import com.jadebyte.gitlagos.adapters.UserAdapter;
 import com.jadebyte.gitlagos.listeners.EndlessRecyclerViewScrollListener;
 import com.jadebyte.gitlagos.listeners.UserClickedListener;
 import com.jadebyte.gitlagos.pojos.UserItem;
+import com.jadebyte.gitlagos.utils.Constants;
 import com.jadebyte.gitlagos.utils.MyVolleyError;
 import com.jadebyte.gitlagos.utils.VolleySingleton;
 
@@ -46,7 +47,6 @@ import butterknife.Unbinder;
 public class UserListFragment extends Fragment {
 
     //Constants
-    private final String TAG = "UserListFragment";
     private final String KEY_USER_ITEMS = "userItems";
 
     //Views
@@ -59,7 +59,7 @@ public class UserListFragment extends Fragment {
 
 
     //Fields
-    private final String userUrl = "https://api.github.com/search/users?q=location:lagos+language:java&per_page=20";
+    private final String userUrl = Constants.URLS.DEFAULT_URL;
     private String moreUsersUrl;
     private List<UserItem> mUserItemList;
     private UserAdapter adapter;
