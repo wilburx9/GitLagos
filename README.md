@@ -4,4 +4,4 @@
 
 An Android App that displays Github Java developers from Lagos, Nigeria
 
-The working apk can be <a href="https://raw.githubusercontent.com/wilburt/GitLagos/master/git-lagos-release.apk">downloaded here</a>
+The working apk can be <a href="https://raw.githubusercontent.com/wilburt/GitLagos/master/git-lagos.apk">downloaded here</a>
